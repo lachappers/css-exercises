@@ -4,9 +4,11 @@ html, body {
   height: 100%;
 }
 
+
+
 body {
   font-family: Roboto, sans-serif;
-  margin: 0;
+
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
@@ -20,6 +22,27 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bot {
+  display: flex;
+  gap: 5px;
 }
 
 .icon {
@@ -33,6 +56,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  margin: 5px;
 }
 
 .close-button {
@@ -64,3 +89,10 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.header {
+  font-size: large;
+  font-weight: bold;
+  
+}
+
